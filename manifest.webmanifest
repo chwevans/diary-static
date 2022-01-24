@@ -14,8 +14,8 @@
       "sizes": "512x512"
     }
   ],
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/chwevans/diary-static/",
+  "start_url": "/chwevans/diary-static/",
   "background_color": "#000000",
   "theme_color": "#000000",
   "display": "standalone"

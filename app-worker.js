@@ -1,18 +1,18 @@
-const cacheName = "app-" + "9ab7cd477d670d7644f2ab25223dd843ffc3f337";
+const cacheName = "app-" + "92567311a6ea63cf1e5089c853d2a1f603ae1b4c";
 
 self.addEventListener("install", event => {
-  console.log("installing app worker 9ab7cd477d670d7644f2ab25223dd843ffc3f337");
+  console.log("installing app worker 92567311a6ea63cf1e5089c853d2a1f603ae1b4c");
 
   event.waitUntil(
     caches.open(cacheName).
       then(cache => {
         return cache.addAll([
-          "/",
-          "/app.css",
-          "/app.js",
-          "/manifest.webmanifest",
-          "/wasm_exec.js",
-          "/web/app.wasm",
+          "/chwevans/diary-static",
+          "/chwevans/diary-static/app.css",
+          "/chwevans/diary-static/app.js",
+          "/chwevans/diary-static/manifest.webmanifest",
+          "/chwevans/diary-static/wasm_exec.js",
+          "/chwevans/diary-static/web/app.wasm",
           "https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css",
           "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css",
           "https://fonts.googleapis.com/icon?family=Material+Icons",
@@ -39,7 +39,7 @@ self.addEventListener("activate", event => {
       );
     })
   );
-  console.log("app worker 9ab7cd477d670d7644f2ab25223dd843ffc3f337 is activated");
+  console.log("app worker 92567311a6ea63cf1e5089c853d2a1f603ae1b4c is activated");
 });
 
 self.addEventListener("fetch", event => {

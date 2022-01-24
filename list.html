@@ -8,29 +8,29 @@
 <meta name="keywords" content>
 <meta name="theme-color" content="#000000">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
-<meta property="og:url" content="http://127.0.0.1:61109/list">
+<meta property="og:url" content="http://127.0.0.1:61477/list">
 <meta property="og:title" content>
 <meta property="og:description" content="A digital diary">
-<meta property="og:type" content="website">
-<meta property="og:image" content>
+<meta content="website" property="og:type">
+<meta content property="og:image">
 <title>
 
 </title>
-<link rel="icon" type="image/png" href="https://storage.googleapis.com/murlok-github/icon-192.png">
+<link type="image/png" href="https://storage.googleapis.com/murlok-github/icon-192.png" rel="icon">
 <link rel="apple-touch-icon" href="https://storage.googleapis.com/murlok-github/icon-192.png">
-<link rel="manifest" href="/manifest.webmanifest">
-<link type="text/css" rel="stylesheet" href="/app.css">
-<script src="/wasm_exec.js" defer="true"></script>
-<script defer="true" src="/app.js"></script>
+<link rel="manifest" href="/chwevans/diary-static/manifest.webmanifest">
+<link type="text/css" rel="stylesheet" href="/chwevans/diary-static/app.css">
+<script defer="true" src="/chwevans/diary-static/wasm_exec.js"></script>
+<script src="/chwevans/diary-static/app.js" defer="true"></script>
 <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
-<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
 <div>
 <aside id="app-wasm-loader" class="goapp-app-info">
 <img id="app-wasm-loader-icon" class="goapp-logo goapp-spin" src="https://storage.googleapis.com/murlok-github/icon-192.png">
-<p class="goapp-label" id="app-wasm-loader-label">
+<p id="app-wasm-loader-label" class="goapp-label">
  
 </p>
 </aside>
@@ -61,7 +61,7 @@ Questions
 <form>
 <div class="row">
 <div class="input-field col s12">
-<input class="validate" placeholder="What do you want to ask?" required="true" value>
+<input required="true" value class="validate" placeholder="What do you want to ask?">
 </div>
 </div>
 <div class="row">
@@ -76,7 +76,7 @@ Free response
 </select>
 </div>
 <div class="input-field col s3">
-<input type="time" step="3600.0000" placeholder="After which hour?" required="true" value>
+<input step="3600.0000" placeholder="After which hour?" required="true" value type="time">
 </div>
 <div class="input-field col s6">
 <a class="btn-floating btn-small waves-effect grey">
