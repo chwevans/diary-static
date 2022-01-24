@@ -1,0 +1,22 @@
+{
+  "short_name": "Diary",
+  "name": "Diary",
+  "description": "A digital diary",
+  "icons": [
+    {
+      "src": "https://storage.googleapis.com/murlok-github/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://storage.googleapis.com/murlok-github/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "scope": "/",
+  "start_url": "/",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "display": "standalone"
+}
