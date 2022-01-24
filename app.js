@@ -5,7 +5,7 @@ var goappOnUpdate = function () { };
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register("/chwevans/diary-static/app-worker.js")
+    .register("/diary-static/app-worker.js")
     .then(reg => {
       console.log("registering app service worker");
 
@@ -28,7 +28,7 @@ if ("serviceWorker" in navigator) {
 // -----------------------------------------------------------------------------
 // Env
 // -----------------------------------------------------------------------------
-const goappEnv = {"GOAPP_INTERNAL_URLS":"null","GOAPP_ROOT_PREFIX":"/chwevans/diary-static","GOAPP_STATIC_RESOURCES_URL":"/chwevans/diary-static","GOAPP_VERSION":"92567311a6ea63cf1e5089c853d2a1f603ae1b4c"};
+const goappEnv = {"GOAPP_INTERNAL_URLS":"null","GOAPP_ROOT_PREFIX":"/diary-static","GOAPP_STATIC_RESOURCES_URL":"/diary-static","GOAPP_VERSION":"bba552bd3dd2ea10441b4733783a52244c1a4aa6"};
 
 function goappGetenv(k) {
   return goappEnv[k];
@@ -105,7 +105,7 @@ if (!/bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent)) {
 
   const go = new Go();
 
-  WebAssembly.instantiateStreaming(fetch("/chwevans/diary-static/web/app.wasm"), go.importObject)
+  WebAssembly.instantiateStreaming(fetch("/diary-static/web/app.wasm"), go.importObject)
     .then(result => {
       const loaderIcon = document.getElementById("app-wasm-loader-icon");
       loaderIcon.className = "goapp-logo";

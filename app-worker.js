@@ -1,18 +1,18 @@
-const cacheName = "app-" + "92567311a6ea63cf1e5089c853d2a1f603ae1b4c";
+const cacheName = "app-" + "bba552bd3dd2ea10441b4733783a52244c1a4aa6";
 
 self.addEventListener("install", event => {
-  console.log("installing app worker 92567311a6ea63cf1e5089c853d2a1f603ae1b4c");
+  console.log("installing app worker bba552bd3dd2ea10441b4733783a52244c1a4aa6");
 
   event.waitUntil(
     caches.open(cacheName).
       then(cache => {
         return cache.addAll([
-          "/chwevans/diary-static",
-          "/chwevans/diary-static/app.css",
-          "/chwevans/diary-static/app.js",
-          "/chwevans/diary-static/manifest.webmanifest",
-          "/chwevans/diary-static/wasm_exec.js",
-          "/chwevans/diary-static/web/app.wasm",
+          "/diary-static",
+          "/diary-static/app.css",
+          "/diary-static/app.js",
+          "/diary-static/manifest.webmanifest",
+          "/diary-static/wasm_exec.js",
+          "/diary-static/web/app.wasm",
           "https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css",
           "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css",
           "https://fonts.googleapis.com/icon?family=Material+Icons",
@@ -39,7 +39,7 @@ self.addEventListener("activate", event => {
       );
     })
   );
-  console.log("app worker 92567311a6ea63cf1e5089c853d2a1f603ae1b4c is activated");
+  console.log("app worker bba552bd3dd2ea10441b4733783a52244c1a4aa6 is activated");
 });
 
 self.addEventListener("fetch", event => {
